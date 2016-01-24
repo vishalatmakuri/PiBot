@@ -27,6 +27,10 @@ app.get('/', function(request, response) {
   response.render('index.html');
 });
 
+app.get('/livefeed', function(request, response) {
+  response.render('live.html');
+});
+
 io.on('connection', function(socket){
 	socket.on('stream',function(image){
 		socket.broadcast.emit('stream',image);

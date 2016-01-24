@@ -7,10 +7,11 @@
 	</head>
 	<body>
 		<video src="" id='video' style="width:600px; height:320px" autoplay="true"></video>
-		<canvas id="preview"></canvas>
+		<canvas id="preview"></canvas>	
 		<div id="logger"></div>
 		<script type="text/javascript">
 			var video = document.getElementById('video');
+			
 			var canvas = document.getElementById('preview');
 			var context = canvas.getContext('2d');
 			var logger = document.getElementById('logger');
@@ -34,6 +35,7 @@
 				socket.emit('stream',canvas.toDataURL('image/webp'));
 
 			}
+
 			$(function(){
 				navigator.getUserMedia = (navigator.getUserMedia|| navigator.webkitGetUserMedia)
 				if (navigator.getUserMedia) {
@@ -42,7 +44,7 @@
 				};
 				setInterval(function(){
 					viewVideo(video, context)
-				}, 500);
+				}, 100);
 			})
 		</script>
 	</body>

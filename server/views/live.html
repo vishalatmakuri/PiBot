@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<img id="play"></img>
+		<script type="text/javascript">
+			var socket = io();	
+			var img = document.getElementById('play')
+			socket.on('stream',function(image){
+				img.src = image;
+			})
+		</script>
+	</body>
+</html>
