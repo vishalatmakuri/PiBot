@@ -1,0 +1,22 @@
+{
+  "name": "piserver",
+  "version": "1.0.0",
+  "description": "recive and show pi video",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "ejs": "^2.4.1",
+    "express": "~4.13.1",
+    "jquery": "^2.2.0",
+    "morgan": "~1.6.1",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
