@@ -9,21 +9,21 @@ try:
     camera.stop_preview()
 finally:
     camera.close()
-import socket
+#import socket
+#https://gist.github.com/marvin/4318413
+#HOST = 'localhost'
+#PORT = 9876
+#ADDR = (HOST,PORT)
+#BUFSIZE = 4096
+#videofile = "videos/royalty-free_footage_wien_18_640x360.mp4"
 
-HOST = 'localhost'
-PORT = 9876
-ADDR = (HOST,PORT)
-BUFSIZE = 4096
-videofile = "videos/royalty-free_footage_wien_18_640x360.mp4"
+#bytes = open(videofile).read()
 
-bytes = open(videofile).read()
+#print len(bytes)
 
-print len(bytes)
+#client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#client.connect(ADDR)
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(ADDR)
+#client.send(bytes)
 
-client.send(bytes)
-
-client.close()
+#client.close()
