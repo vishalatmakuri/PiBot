@@ -27,6 +27,6 @@ with open('toserver.webp','rb') as image_file:
     print send
 #np.fromstring(my_stream.getvalue(), dtype=uint8)
     nodeSocket.emit('stream', 'data:image/webp;base64,'+send)
-    image_file.close()
+image_file.close()
 camera.close()
     
